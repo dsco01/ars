@@ -1,0 +1,317 @@
+59.0.4:
+* Should fix "TileHidden cannot be cast to TileEntityCodeDoor"
+
+59.0.2:
+* Fixed "NoSuchFieldError: defaultVolume" crash with updated IC2.
+
+59.0.1:
+* Refined iron ingots replaced with refined iron plates in all recipes. Fixes crash.
+
+59.0.0:
+* Updated to 1.7.10.
+
+58.1.0:
+* Official 1.7.2 update.
+* Logic card recipes will consume their ingredients. (possibly temporary depending on whether it even makes a difference)
+* Changed refined iron to normal iron in one recipe, since refined iron was removed.
+* Items (MFDs, blank cards, link cards, logic tokens, crafting ingredients) will be deleted when upgrading from 1.6.4. Sorry!
+* Fixed forcefields not getting any power with "preferredEnergySystem=infinite"
+* Forcefields look bad or invisible at a distance because of 1.7's mipmapping (texture smoothing).
+* New bug: Several GUIs have syncing problems.
+* New bug: forcefields camouflaged with ice are not translucent.
+* New bug: forcefields camouflaged with stained glass are just weird.
+
+57.2.0:
+* EMP upgrades, forcefield cores and tesla coils can use different power systems - set the preferredEnergySystem option in immibis.cfg.
+* Removed the ability to right click with a frequency card to see a random number.
+
+57.1.1:
+* Fixed DeFence IDs not being added to config file.
+
+57.1.0:
+* Absorbed the old mod DeFence. As a result:
+  * Added chain link fences.
+  * Added barbed wire fences.
+  * Added code doors, which are doors locked by a 4-digit PIN.
+    Only breakable by the owner or in creative.
+    This might change as it could be used for griefing.
+
+57.0.0:
+* Updated to Minecraft 1.6.4.
+* Updated to experimental IC2.
+
+56.0.0:
+* Updated to Minecraft 1.6.2.
+* Removed deprecated blocks: reactor containment field projector, EU injector, reactor connector.
+* Fixed crash when double-clicking slots.
+
+55.1.4:
+* Fixed beam code not using isAirBlock to check for air.
+
+55.1.3:
+* Fixed empty 1 and 2 sections being created in config file.
+* Industrial tesla coils use a whitelist of entities to attack, instead of a blacklist
+  (This means they won't attack any unknown entities; mobs from other mods will still be attacked)
+* Arrows and other projectiles can be destroyed by industrial tesla coils.
+* Destroying a projectile always costs 500 EU instead of using as much EU as possible.
+  It's also faster than attacking a player or mob.
+
+55.1.2:
+* Reobfuscated with SRG names; fixes AbstractMethodError.
+
+55.1.1:
+* Fixed forcefield filters not working with area projectors.
+
+55.1.0:
+* Item detection filters now target dropped items (which match the item in the filter) as well as players.
+* Made everything relating to data beams glowy (like xycraft ore)
+* Made forcefield projectors glowy (also like xycraft ore)
+* Fixed being able to mine data beams with silk touch.
+* Fixed a small texture bug with programmable filters.
+* Added input mode icon to the programmable filter GUI.
+* Added coloured input tokens.
+* Fixed zapper+camo forcefields using the wrong texture when no block is in the camouflage upgrade.
+* Directional Projector renamed to Line Projector (as intended).
+* Added (DEPRECATED) tags to reactor field projectors, reactor connectors.
+  Reactor field projectors are redundant - use an area projector with an offset.
+* Added (DEPRECATED) tag to EU injector. If you somehow still have one, just supply power to the core directly.
+* enableReactorBlocks defaults to false.
+* Apologized for being like Sengir and removing things. This mod is not Nuclear Control. At least nothing was nerfed.
+
+55.0.1:
+* Fixed item detection filters not saving their inventory. (Why did nobody tell me about that?)
+* Renamed intersection/union/difference tokens to AND/OR/NOT tokens respectively.
+* Fixed item detection filter beam colour.
+
+55.0.0:
+* Gave up waiting for IC2 to have a non-alpha release and updated to Minecraft 1.5.2.
+* Items cannot be inserted into loot collectors.
+* Only splash potions can be inserted into potion applicators.
+* Removed Reactor Monitor, Reactor Monitor Client and Reactor Cooler.
+* Removed reactor link cards.
+* Removed MFD wrench mode.
+* Blacklisted item frames and all BuildCraft entities from being zapped by industrial tesla coils.
+
+52.0.6:
+* Changed blank card recipe slightly, so it no longer conflicts with MFFS.
+* Added reverse crafting recipes for projectors.
+
+52.0.5:
+* Removed some code that caused rare crashes when opening GUIs, and didn't seem to do anything useful.
+
+52.0.4:
+* Recompiled with Java 6.
+
+52.0.3:
+* Fixed packaging again.
+
+52.0.2:
+* Fixed mcmod.info
+
+52.0.1:
+* Fixed packaging.
+
+52.0.0:
+* Updated to 1.4.6.
+
+51.0.3:
+* Fixed cooldown when the world time is changed.
+
+51.0.2:
+* Fixed config sections and renamed many options. Existing configs should auto-convert.
+  If anything is left over in the 0/1/2 sections, it's not used and you can delete it.
+* Added max tesla range option (default 100)
+
+51.0.1:
+* Updated textures (by kaj_)
+* Fixed an exploitable world-breaking server crash that could also be triggered accidentally.
+* Fixed forcefield filter not working on area projectors.
+* Fixed colour of forcefield filter beam.
+
+51.0.0:
+* Updated to 1.4.5.
+* Ended support for 1.2.5, 1.3.2 and 1.4.2.
+
+50.2.4:
+* Removed debug message.
+* Another potential fix for the reactor crash bug.
+
+50.2.3:
+* Compiled against updated IC2, may fix reactor crash bug (1.4.2 only)
+
+50.2.2:
+* Fixed top and bottom textures being swapped on some forcefield-related blocks.
+* Found out why reactor monitor clients don't work - you need to set them up like this: http://puu.sh/1myiu
+
+50.2.1:
+* Fixed invisible GUI text in 1.4.2.
+* Fixed hotbar items being visible in directional extender GUI.
+
+50.2.0:
+* Updated to 1.4.2
+
+50.1.1:
+* Fixed a crash
+
+50.1.0:
+* Changed: RENAMED CONFIG FILE TO AdvancedRepulsionSystems.cfg TO AVOID CONFLICT WITH MFFS!
+* Changed: Moved textures from /mffs_grafik to /immibis/ars/textures to avoid conflicts with
+  MFFS. This will break existing texture packs!
+* Changed: New forcefield machine textures by Ivysaur1996.
+* Changed: New tesla machine textures by kaj_says. (Except the temporary ones)
+* Changed: Almost all recipes.
+* Changed: Built-in storage of a forcefield core decreased from 10M to 1M forcepower (100k EU).
+* Changed: Default range of a forcefield core increased from 8 to 16 blocks.
+* Changed: Blank card recipe now creates 8 cards.
+* Changed: Right click will not open GUIs if you're sneaking, instead of if you're holding a lever or ARS block.
+* Changed: In 1.3.2 the coolant injector will recharge RSH and LZH condensators using lapis and redstone from its inventory.
+* Changed: Blank cards stack to 64.
+* Removed: ID tool MFDevice from the code.
+* Removed: reactor link MFDevice from the code.
+* Removed: old (useless) ID cards from the code.
+* Removed: oldNames option.
+* Added: Industrial tesla coil and related blocks. Uses two more block IDs - one for the machines and one for the "lasers."
+* Added: Speed, EMP, range, and suppressor upgrades for industrial tesla coils.
+* Added: Upgrade multiplexers (for tesla coil upgrades)
+* Added: Programmable filters, logic tokens, forcefield filters, and item detection filters (for tesla coil target filtering)
+         Note: Some items besides logic tokens are acceptable in programmable filters.
+* Added: Loot collector (tesla coil upgrade)
+* Added: Remote potion applicator (tesla coil upgrade)
+* Added: Config option to disable tesla coil etc (disables registration of those block IDs)
+* Added: Config option to disable reactor-related blocks (disables recipes only)
+* Added: Config option for extra storage from a storage upgrade.
+* Added: Config option for default storage of a forcefield core.
+* Added: Config option for default range of a forcefield core.
+* Added: You can now right click on a core with a blank card to encode it.
+* Added: You can now right click on a projector with a frequency card to insert it.
+* Renamed: some items that had MFFS in their name
+* Renamed: directional projector to "Line forcefield projector"
+* Renamed: directional extender to "Line projector extender"
+* Renamed: deflector to "Plate forcefield projector"
+* Renamed: reactor heat control to "Reactor coolant injector"
+* Fixed: Tube projectors now retain their X and Y offset between world loads.
+* Fixed: Reactor coolers now use their "active" texture when they're active.
+* Fixed: Machines not updating visually until a block near them changed.
+* Re-added: Recipes for reactor blocks (if enabled)
+
+50.0.2:
+* Fixed camouflaged field blocks being broken in SMP. (requires Immibis Core update)
+
+50.0.1:
+* Fixed direction being invisible.
+* Renamed to Advanced Repulsion Systems.
+
+50.0.0pr1:
+* Changed version numbering scheme
+* Updated to 1.3.2
+* Known problem: Direction is not visible on any blocks.
+* Known problem: Reactor blocks are not updated to work with new reactors.
+                 In particular the cooler may need balancing since it allows CASUCs.
+
+rev10.2:
+* Fixed console spam from directional extenders.
+* Fixed being able to offset a directional extender independently from the main projector.
+
+rev10.1:
+* Fixed reactor containment projectors centering the field on the projector instead of the reactor.
+* Fixed area projectors not accepting dome upgrades.
+* Tube projectors now accept dome upgrades. Mostly useful on horizontal tubes.
+
+rev10:
+* Made forcefields instantly break boats that are stuck in them.
+  With a zapper upgrade, they will also break boats that touch them.
+* Internal changes to allow large forcefields to have inhibitor
+  upgrades without lagging.
+* Fixed vertical tube projectors in "front" mode?
+* Added a cooldown to field activation and deactivation to prevent spam.
+  It takes about 1 tick per 40 force field blocks. A cube with a radius
+  of 16 will take about 8 seconds. Adjustable by cooldownBlocksPerTick in
+  the config.
+* Removed recipe for remote reactor link, since it didn't even do anything.
+* Removed ID-tool mode of MFD, since it was useless. If you have one, you
+  can still craft it back to wrench mode.
+  Crafting a wrench-mode MFD now switches it to...
+* Offset mode. Right click on any side of a projector to shift the entire
+  field in that direction. Sneak to shift in opposite direction.
+* Added recipe for the inhibitor upgrade (machine block + 4 carbon plates)
+* Allowed wiring directly to cores.
+* Disabled recipe for EU injector.
+* Cores accept energy in complete packets, so no more increased cable losses.
+* Cores will not use any EU's if that would waste energy (if there's <10 FP missing)
+* Projectors now drop their contents when broken (but not reactor monitors
+  and camouflage upgrades)
+* Frequency cards (all types) can be crafted by themselves to reset them.
+
+rev9:
+* Added unfinished inhibitor upgrade. On large forcefields, may cause lag or slow forcefield generation. You shouldn't use this yet.
+* Fixed players being able to crash the server with a ClassCastException.
+* Removed a debug message
+
+rev8:
+* Registered force field block correctly for Bukkit.
+* Required clients to have the mod if the server has it.
+
+rev7:
+* Added configurable limits to config file. maxProjectorSize controls most limits, except for tube radius and deflector distance.
+* Made forcefield blocks render faces that are touching other types of force fields correctly
+* Made block-breaker fields no longer break tile entities.
+* Reduced lag from large tube forcefields (by only refreshing the actual forcefield blocks and not the ones in the middle)
+* Added configurable refresh speed (in blocks/tick/projector) - when you have a block blocking
+  a forcefield, this affects the time it takes for it to be replaced with a forcefield block. 
+
+rev6:
+* Refactored more code.
+* Block cutter should now properly drop all blocks.
+* Tube projectors can make holes in other force fields linked to the same generator again.
+* slowGenerate removed. Forcefields generate instantly.
+
+rev5:
+* Refactored lots of projector-related code.
+* Block-cutter, zapper and camouflage upgrades work on all projectors (except reactor fields)
+* Dome upgrade works on tube projectors
+* Camouflage upgrade works in SMP
+* Changed area projector max height to 255 instead of 127
+* Quadrupled area projector power consumption; previously the number
+  of force field blocks was estimated incorrectly and accounted for only 1/4
+  of the blocks.
+* Halved area projector power consumption (stacks with above)
+  if a dome upgrade is present, since there are only half the field blocks.
+* Reactor field can now be placed 1 block away from a 0-chamber reactor.
+* Outline of zapper forcefields fixed when pointing at them
+* Zapper forcefield particles now spawn at a random location inside the block,
+  instead of always at the centre.
+* Fixed zapper forcefields not hurting things that jump upwards into them.
+* Zapper forcefields now count as generic damage instead of void damage
+  - so they can't hurt creative players any more
+* Fixed typo causing zapper forcefields to have weird collision boxes.
+* Made force field blocks not made by a projector decay, like leaves
+  - in case you somehow get a field block without a projector
+* Changed: Tube projectors no longer poke holes in other forcefields.
+* Discoveries:
+  - Reactor containment fields will turn on if the reactor exceeds 75% of its max heat
+    (ignoring reactor plating) and will automatically get the block cutter upgrade
+* Bugs:
+  - Projectors sometimes don't visually face the right way when placed in SMP.
+    reconnecting fixes this. so does changing a block next to the projector.
+  - Zapper and camouflage upgrades do not work together
+  - Some sides of field blocks touching the ground can be darkened. Most noticeable
+    when using camouflage upgrades.
+  - If a camouflage upgrade is destroyed, its contents are not dropped.
+* Fixed upgrades not changing appearance when activated in SMP
+
+rev4:
+* Hopefully fixed load order problems (edit: actually didn't,
+  but this wasn't the mod with the load order problems, that was Dimensional Anchors)
+
+rev3:
+* Fixed crash when opening deflector GUI
+* Changed uninsulated to insulated copper cable in recipes
+* Fixed large forcefields not working near bedrock level
+* May have fixed forcefields not working sometimes in SMP if not placed near Z=0 and nobody was near Z=0 to load that chunk
+* Changed TileEntityProjektor.field_queue from a LinkedList to a HashSet
+  - results in forcefields being built in a different randomish order
+    instead of bottom-to-top
+* Added slowGenerate config option
+  - If true, forcefields are generated at 400 blocks/second
+  - If false, 400 blocks/tick = 8000 blocks/second
+  - Defaults to true on servers, false on clients
