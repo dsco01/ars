@@ -1,0 +1,18 @@
+{"immibis.core.sprites": {"spriteSize": 16, "sprites": [
+["underwater0*6", [0,1]],
+["dome0*6", [0,2]],
+["breaker0*6", [0,3]],
+["storage0*6", [0,4]],
+["range0*6", [0,5]],
+["zapper0*6", [0,6]],
+["camo0*6", [0,7]],
+["inhibitor0*6", [0,9]],
+["underwater1*6", [7,1]],
+["dome1*6", [7,2]],
+["breaker1*6", [7,3]],
+["storage1*6", [7,4]],
+["range1*6", [7,5]],
+["zapper1*6", [7,6]],
+["camo1*6", [7,7]],
+["inhibitor1*6", [7,9]]
+]}}

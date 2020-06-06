@@ -1,0 +1,62 @@
+item.advrepsys.debugger.name=MFDevice <Debugger>
+item.advrepsys.freqcard.blank.name=Blank ARS card
+item.advrepsys.freqcard.name=Forcefield frequency card
+item.advrepsys.mfd.offset.name=MFDevice <Offset>
+
+item.advrepsys.card.player.name=Player detector token
+item.advrepsys.card.and.name=AND token
+item.advrepsys.card.not.name=NOT token
+item.advrepsys.card.or.name=OR token
+item.advrepsys.card.blank.name=Blank token
+item.advrepsys.card.life.name=Life detector token
+item.advrepsys.card.mob.name=Mob detector token
+item.advrepsys.card.animal.name=Animal detector token
+item.advrepsys.card.redstone.name=Redstone input token
+item.advrepsys.card.item.name=Item detector token
+item.advrepsys.card.in0.name=Blue input token
+item.advrepsys.card.in1.name=Yellow input token
+item.advrepsys.card.in2.name=Green input token
+item.advrepsys.card.in3.name=Purple input token
+item.advrepsys.card.in4.name=Red input token
+item.advrepsys.card.in5.name=Cyan input token
+
+item.advrepsys.energy-modulator.name=Energy modulator
+item.advrepsys.diamond-lens.name=Diamond lens
+item.advrepsys.projector-base.name=Forcefield projector base
+
+tile.advrepsys.core.name=Forcefield core
+tile.advrepsys.proj.area.name=Area forcefield projector
+tile.advrepsys.proj.line.name=Line forcefield projector
+tile.advrepsys.proj.plate.name=Plate forcefield projector
+tile.advrepsys.proj.tube.name=Tube forcefield projector
+tile.advrepsys.proj.extender.name=Line projector extender
+tile.advrepsys.upgrade.underwater.name=Forcefield underwater upgrade
+tile.advrepsys.upgrade.dome.name=Forcefield dome upgrade
+tile.advrepsys.upgrade.breaker.name=Forcefield block cutter upgrade
+tile.advrepsys.upgrade.core.storage.name=Forcefield core storage upgrade
+tile.advrepsys.upgrade.core.range.name=Forcefield core range upgrade
+tile.advrepsys.upgrade.zapper.name=Forcefield zapper upgrade
+tile.advrepsys.upgrade.camo.name=Forcefield camouflage upgrade
+tile.advrepsys.upgrade.inhibitor.name=Forcefield inhibitor upgrade
+
+tile.advrepsys.beam.name=Wireless data beam
+
+tile.advrepsys.tesla.name=Industrial tesla coil
+tile.advrepsys.tesla.upgrade.multiplexer.name=Upgrade multiplexer
+tile.advrepsys.tesla.upgrade.range.name=Tesla range upgrade
+tile.advrepsys.tesla.upgrade.emp.name=EMP upgrade
+tile.advrepsys.tesla.upgrade.speed.name=Tesla speed upgrade
+tile.advrepsys.tesla.upgrade.invisible.name=Wavelength shift upgrade
+tile.advrepsys.tesla.upgrade.lootcollector.name=Loot collector
+tile.advrepsys.tesla.upgrade.potion.name=Remote potion applicator
+tile.advrepsys.tesla.filter.base.name=Programmable filter
+tile.advrepsys.tesla.filter.field.name=Forcefield filter
+tile.advrepsys.tesla.filter.item.name=Item detection filter
+
+tile.advrepsys.defence.chainlink.name=Chain Link Fence
+tile.advrepsys.defence.barbedwire.name=Barbed Wire Fence
+item.advrepsys.defence.codedoor.name=Code Door
+gui.advrepsys.defence.codedoor.name=Code Door
+
+death.attack.ARSteslacoil=%1$s was zapped
+death.attack.ARSteslacoil.player=%1$s was zapped while trying to escape %1$s
